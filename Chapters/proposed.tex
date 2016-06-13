@@ -1,0 +1,64 @@
+\chapter{Proposed System}
+ 
+
+   \section{Source Code to AST}
+   An Abstract Syntax Tree (AST) is a tree representation of the source code written in a programming language. Each node is representing the construct occurring in the source code. It is usually the result of the syntax analysis phase and serves as an intermediate representation of the program. The syntax analysis is the second phase of the compiler design and another important lexical analysis phase  is there before it. In the lexical analysis, the lexical analyzer takes the source code from
+   language preprocessors that are written in the form of text file. The lexical analyzer chunks
+   these syntaxes into a series of tokens, by excluding any whitespace or comments in the
+   source code and passes the data to the syntax analyzer when it demands.
+   If the lexical analyzer finds a token invalid, it generates an error. The lexical analyzer can identify tokens with the help of regular expressions
+   and pattern rules. It works
+   closely with the syntax analyzer.  In syntax analysis phase syntax analyzer or parser that groups sequences of tokens from the lexical
+   analysis phase into phrases each with an associated phrase type and it produces the parse tree and syntax tree.  A lexical analyzer uses regular expressions
+   and pattern rules for identifying tokens, but a lexical analyzer cannot check the syntax of a given sentence due to
+   the limitations of the regular expressions. It cannot check balancing
+   tokens, such as parenthesis. Therefore, this phase uses context-free grammar (CFG), which
+   is recognized by push-down automata. To generate the AST the program or tool needs to do the first two complex phases of the compiler.
+   
+   Generating an AST from the scratch is a difficult and time-consuming process. There are many tools and APIs are there to generate AST. Eclipse JDT, PavaParser, JetBrains MPS are some of the tools used to create AST from the given source code. The proposed system will use one of these tools for converting source code to AST.
+   \section{Traverse AST}
+    Conformance to secure coding standard requires that the code not contains any violations of the
+    rules specified in a particular coding standard. Most of the coding standards are written in English sentences. To implement these standards, we need to convert this sentences to programs. The proposed system will 
+    take the java file as input and it will generate the AST using existing tools like Eclipse JDT and finally, it will visit every node and do a pattern matching for checking the applicability of the rule. Applicability of the rule can verify based on the nodes which involved in the rule. For example, visit and process a VariableDeclaration node if that rule related to the variable declaration. 
+    \newline
+    A sample pseudo code 
+   
+    \begin{verbatim}
+     preVisit(ASTNode node)
+     visit(VariableDeclaration node)
+     ... // now the children of the method invocation are recursively processed-
+     if visit returns true //...
+     endVisit(VariableDeclaration node)
+     postVisit(ASTNode node) 
+    \end{verbatim}
+    During the visit in VariableDeclaration node apply the validation of variable declaration related rules. This is the way traversing of the AST will help to verify the rule. Visitor pattern algorithm will use to do this task.
+    
+    \section{An Executable Binary}
+    
+    AOSP is very large in a number of files and lines of code. There are fifty thousand plus java files are present, so an efficient tool needed to process the source code. Apart from AOSP in future also if a requirement that needs to process a large number of files then automation is needed. The same time single file, single rule validations also a part of the project. So the proposed system will be an executable file which will accept some arguments and files as input and produce the violations list as output and currently it will verify only Android Java related rules. The proposed tool will be coded in Java and it will run in both Windows and Linux operating system.  The arguments will help to use the tools as user's wish. Currently proposed format is 
+    \begin{verbatim}
+     <binary name> <argument> <filename/directory path> <optional arguments>
+       \end{verbatim}
+    Binary name is the proposed executable file name and arguments are 
+    \begin{verbatim}
+    -b For batch conversion
+    -s For single file conversion
+    -h For help page
+    -f For semi auto fix
+    <optional arguments> For Checking/Fixing a particular rule.
+     \end{verbatim}
+	\section{Audit Source Code}
+	\subsection{Applicability of the rule}
+	The first task of the tool is to identify the given rule is applicable to the source code file. AST nodes and visitor pattern are used for this task. The given source code will parse and generate AST using existing tool. Then the particular node will visit using visitor pattern algorithm and verify the applicability. For example, in CERT standard, a rule named MSC01-J\cite{msc01j} suggesting do not use an empty infinite loop. To verify the applicability first check any WhileLoop node is present in the given program. If there check the condition is true and body is empty. If both are there then the violation of MSC01-J is present. Keep the visitor method as true so that it will move to the next while loop.
+	\subsection{Semi-algorithmically explanation}
+	An efficient tool detects all the violation without any false negative problem but at the same time, it should report the problem to the user clearly. A semi-algorithmically explanation will address the problem. It will include what is the violation, which code block contains the violation, what are the side-effects, a compliant and non-compliant example, etc. 
+	\subsection{Semi-automatic quick fixes}
+ While processing a large number of source code manual correction is not a feasible solution, at the same time full automated correction may lead to compilation error. Here is the relevance of semi-automatic quick fixes. It will give suggestions to the programmer. Some code may need  to add only one or two lines to solve the violation, and some need to change entire block. In the first case, the quick fix is suitable. For example rule MSC01-J\cite{msc01j} adding a  \textit{Thread.sleep(DURATION);} to the while loop body will solve the problem but rules like MSC00-J\cite{msc00j} needs to change many nodes. In this case, just inform the programmer with a better example how to mitigate the current problem.
+	 
+	\section{Report Generation}
+	A well-defined document will help the programmer to address the problem now and future also. The proposed system will generate a report which will contain a total number of each violation present in the project, violations present in the source code, a link with full path, a better explanation of each violation with a complaint and non-complaint code example, a link to the developer documentation and links to related guidelines. The report will be in HTML format and the libraries like Jquery nd Bootstrap will use to make it interactive 
+	
+%	\section{Rewrite Code}
+% AOSP is huge in lines of code, and most of the rules are standardized after the development of AOSP. So these violations may present in AOSP. The proposed tool will verifies the code and it will generate the report. Then the final stage of this project is to rewrite AOSP with secure code.
+ 
+	 

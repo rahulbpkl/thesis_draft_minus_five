@@ -1,0 +1,17 @@
+\chapter{Proposed System}
+There are different ways that software developers can make mistakes that lead to insecurity. Most of the software developers are not aware about these mistakes. Olden days software industry also not that much care about secure coding.Some reasons are time, lack of security standards and no extra payment from the client etc. Because of this problem many software systems developed in that time needs security code review.
+
+Security code review is the process of auditing the source code for an application to verify that the proper security controls are present and they are invoked in the right places. Security code review is a way of ensuring that the application has a self-defending capability. 
+
+ 
+	
+	\section{Audit AOSP}
+	Audit the entire source code of Android open source project(AOSP) with different coding standards and find the violation of the secure coding standards is the first stage of the project. Latest version of AOSP size is around 40GB. There are several tools needed to do this work. None of the tools have all the coding standards and most of the standards are not implemented also. Several scripts are needed for this task and later it can be implement in existing tools. Once testing over analysis of test result will perform. Analysis of false positive is one of the challenge. Most of the tools suffered because of false positive problem on some rules. Coding standard developer documented the rules with false positive probability. The correction stage a manual auditing will do on the basis of false positive probability. 
+	\section{Risk analysis}
+	Risk analysis is other part of auditing. Coding standards documented with many rules and severity. If a violation is happen what is the impact of that violation, how much serious that violation and what are the possible types of attacks that are previously documented. For example in CERT-C \cite{cert-c} they documented a rule named EXP33-C says do not read uninitialized memory. The severity is high(value-3) with high likelihood. For high they documented the effect is run arbitrary code attack and privilege escalation. The proposed system will demonstrate this attack. 
+	 
+	\section{Rewrite Code}
+ 
+	The proposed system will check a source code against the rules. The proposed system will replace the existing code with the secure code. Primary coding standard used for analysis is CERT on C and CPP. Then will go for Java. After replacing a new ROM will build with new secure source code.
+ 
+

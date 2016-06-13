@@ -1,0 +1,153 @@
+
+\chapter{Background}
+\section{LITERATURE SURVEY}
+
+ 
+
+\subsection{The CERT C Secure Coding Standard }
+The CERT C Secure Coding Standard \cite{cert-c} provides rules and recommendations (collectively called guidelines) for secure coding in the C programming language. The goal of these rules and recommendations is to develop safe, reliable, and secure systems, for example by eliminating undefined behaviors that can lead to undefined program behaviors and exploitable vulnerabilities. Conformance to the coding rules defined in this standard are necessary (but not sufficient) to ensure the safety, reliability, and security of software systems developed in the C programming language. It is also necessary, for example, to have a safe and secure design. Safety-critical systems typically have stricter requirements than are imposed by this coding standard, for example requiring that all memory be statically allocated. However, the application of this coding standard will result in high-quality systems that are reliable, robust, and resistant to attack.
+Each guideline consists of a title, a description, and a noncompliant code example and compliant solutions. The title is a concise, but sometimes imprecise, description of the description of the guideline. The description specifies the normative requirements of the rule or recommendation. The noncompliant code examples are examples of code that would constitute a violation of the guideline. The accompanying compliant solutions demonstrate equivalent code that does not violate the guideline or any other rules or recommendations in this coding standard.
+
+CERT C Secure Coding Standard includes
+
+\begin{table}[h!]
+	\centering
+	
+	\label{tab:table2}
+ 
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+		\textbf{Rule Id} & \textbf{Name} & \textbf{Rules} & \textbf{Recommendations}\\
+		
+		\hline
+		01 & Preprocessor (PRE) & 03 & 14\\
+		\hline
+		
+		02 & Declarations and Initialization (DCL) & 11 & 21\\
+		\hline
+		
+		03 & Expressions (EXP) & 12 & 22\\
+		\hline
+		
+		04 & Integers (INT) & 6 & 18\\
+		\hline
+		
+		05 & Floating Point (FLP) & 7 & 7\\
+		\hline
+		
+		06 & Arrays (ARR) & 7 & 3\\
+		\hline
+		
+		07 & Characters and Strings (STR) & 9 & 11\\
+		\hline
+		
+		08 & Memory Management (MEM) & 6 & 13\\
+		\hline
+		
+		09 & Input Output (FIO) & 16 & 19\\
+		\hline
+		
+		10 & Environment (ENV) & 3 & 5\\
+		\hline
+		
+		11 & Signals (SIG) & 6 & 3\\
+		\hline
+		
+		12 & Error Handling (ERR) & 4 & 8\\
+		\hline
+		
+		13 & Application Programming Interfaces (API) & - & 8\\
+		\hline
+		
+		14 & Concurrency (CON) & 9 & 2\\
+		\hline
+		
+		48 & Miscellaneous (MSC) & 11 & 22\\
+		\hline
+		
+		50 & POSIX (POS) & 12 & 4\\
+		\hline
+		
+	\end{tabular}
+	\caption{Categories in the CERT C secure coding standard}
+\end{table}
+\newpage
+\subsection{The CERT Java Secure Coding Standard}
+	This book \cite{cert-java} contains a good number of secure coding standards developed by SEI-CERT for Java. Each standard is either a rule or a recommendation comes under some category. The rules are mandatory. It is a normalized one. But recommendations are not normalized one. It is still in experimental stage. For each rule they did a risk analysis based on several parameters and they mentioned few possible kinds of attacks for a particular violation.
+	
+	\begin{table}[h!]
+		\centering
+		
+		\label{tab:table1}
+		\begin{tabular}{l|c|c|c}
+			\textbf{Rule Id} & \textbf{Name} & \textbf{Rules} & \textbf{Recommendations}\\
+			\hline
+			00 & Input Validation and Data Sanitization (IDS) & 18 & 7\\
+			\hline
+			01 & Declarations and Initialization (DCL) & 03 & 12\\
+			\hline
+			02 & Expressions (EXP) & 08 & 06\\
+			\hline
+			03 & Numeric Types and Operations (NUM) & 15 & 05\\
+			\hline
+			04 & Characters and Strings (STR) & 05 & 02\\
+			\hline
+			05 & Object Orientation (OBJ) & 13 & 09\\
+			\hline
+			06 & Methods (MET) & 13 & 07\\
+			\hline
+			07 & Exceptional Behavior (ERR) & 10 & 05\\
+			\hline
+			08 & Visibility and Atomicity (VNA) & 06 & -\\
+			\hline
+			09 & Locking (LCK) & 12 & -\\
+			\hline
+			10 & Thread APIs (THI) & 06 & -\\
+			\hline
+			11 & Thread Pools (TPS) & 05 & -\\
+			\hline
+			12 & Thread-Safety Miscellaneous (TSM) & 13 & -\\
+			\hline
+			13 & Input Output (FIO) & 17 & 03\\
+			\hline
+			14 & Serialization (SER) & 13 & -\\
+			\hline
+			15 & Platform Security (SEC) & 11 & 08\\
+			\hline
+			16 & Runtime Environment (ENV) & 07 & -\\
+			\hline
+			17 & Java Native Interface (JNI) & 07 & -\\
+			\hline
+			49 & Miscellaneous (MSC) & 12 & 13\\
+			\hline
+			
+		\end{tabular}
+		\caption{Categories in the CERT Java secure coding standard}
+	\end{table}
+%\begin{verbatim}
+%% ls -l Thesis
+%total 36
+%drwxr-xr-x    2 pmateti  pmateti      4096 May 24 13:07 Chapters/
+%drwxr-xr-x    2 pmateti  pmateti      4096 May 24 11:44 Figures/
+%drwxr-xr-x    2 pmateti  pmateti      4096 May 24 11:44 LaTeX/
+%-rw-r--r--    1 pmateti  pmateti       713 May 24 11:47 Makefile
+%drwxr-xr-x    2 pmateti  pmateti      4096 May 24 13:09 Tables/
+%-rw-r--r--    1 pmateti  pmateti      8513 May 24 11:44 thesis.bib
+%-rw-r--r--    1 pmateti  pmateti      1158 May 24 11:47 thesis.tex
+%drwxr-xr-x    2 pmateti  pmateti      4096 May 24 11:44 WSU/
+%
+%\end{verbatim}
+\newpage
+\subsection{All Your Droid Are Belong To Us A Survey of Current Android Attacks}
+
+ One of the design principles in Android was privilege separation\cite{vidas2011all}. Android has a layered structure of services and provides safety through OS primitives and environmental features. At the application level,each software package is sandboxed. It is done by the kernel in order to employ privilege separation. The main intention behind sandboxing is to prevent information disclosure. It means one application should not access the private space of another application. Instead of doing this,the app should request access to system resources via application level permissions,that should be granted by the user. The permission model of Android, requests permissions from the user whenever it needs resources, like while installing an application, it will ask for list of permissions that the user must allow,for that app to be installed. If user doesn't do this,the app wont be installed. But however, a normal user has no idea what permission an app really needs,and how it affects the installation of the app. 
+ Another most relevant thing is that, the applications are made available through an Android Market. These are self-signed, and does not include any central authority in the act.  The user has a method to verify the validity of the certificate. Google will check application with google bouncer. Even though it is there attacker can bypass google bouncer. Attackers can publish malicious applications to this venue,and users blindly install the malicious code. So, a management model that does reactive malware management is the need of the hour. This is currently managed by Google Services, by killing and uninstalling applications from devices known to have downloaded the application. 
+ 
+ The paper also discussed about an Android Patch Cycle, once a vulnerability is disclosed, Google releases patches for it, the problem is it will take 3-5 months to reach the end user. This time is enough for the attacker to reverse engineer and uses it. With a local USB access,a developer can access an ADB,  It also facilitates direct installation and removal of applications, bypassing the Android Market. The recovery mode allows the user to boot to a separate partition on the device. Attackers can utilize the separate recovery partition by loading in their own malicious image. In this paper there are four attack classes are there, with no physical access,physical access with ADB enabled,access with no ADB enabled,physical access on obstructed device and they suggested five mitigation classes reduce the Patch Cycle length, Privileged applications, Leveraging existing security technologies, Authenticated downloads,Authenticated ADB, Trusted platform module  
+\subsection{Coccinelle: Tool support for automated CERT C Secure Coding Standard certification}
+
+In this paper \cite{olesen2010clang}, they describe work in progress on a prototype tool for automated CERT C Secure Coding Standard compliance checking. The tool
+is based on the open source program analysis and program transformation tool Coccinelle that has been successfully used to find bugs in the Linux kernel, the OpenSSL cryptographic library, and other open source infrastructure software. Coccinelle is scriptable using a combination of a domain-specific language, called the Semantic Patch Language (SmPL), as well as OCaml and Python. The scripts, called semantic patches, specify search patterns partly based on syntax and partly on the control flow of a program. This makes Coccinelle easily adaptable to new classes of errors and new code bases with distinct API usage and code-style requirements. Coccinelle however, does not perform program analysis in the traditional sense, e.g., data-flow analysis or range analysis.
+For the purposes of program certification and compliance checking such analyses are essential, both to ensure soundness of the certification and to improve precision of the tool. For this reason they are currently working on integrating the Clang Static Analyzer with Coccinelle in order to enable Coccinelle to use the analysis (and other) information found by Clang. The Clang Static Analyzer is part of the C front-end for the LLVM project.2 In addition to classic compiler support, it also provides general support for program analysis, using a monotone framework, and provides a framework for checking source code for (security) bugs. The emphasis in the source code checkers of the Clang project is on minimising false positives (reporting ‘‘errors’’ that are not really errors) and thus it is likely to miss some real error cases. 
+
+% -eof-

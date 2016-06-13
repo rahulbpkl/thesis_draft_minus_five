@@ -1,0 +1,89 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Chaverri}{Chaverri}{2016}]{msc00j}
+{\sc Chaverri, J.~S.} Feb 10, 2016.
+\newblock Msc00-j.
+\newblock
+  \url{https://www.securecoding.cert.org/confluence/display/java/MSC00-J.+Use+SSLSocket+rather+than+Socket+for+secure+data+exchange}.
+
+\bibitem[\protect\citeauthoryear{Chess and West}{Chess and
+  West}{2007}]{chess2007secure}
+{\sc Chess, B.} {\sc and} {\sc West, J.} 2007.
+\newblock {\em Secure programming with static analysis}.
+\newblock Pearson Education.
+
+\bibitem[\protect\citeauthoryear{Long, Mohindra, Seacord, Sutherland, and
+  Svoboda}{Long et~al\mbox{.}}{2011}]{cert-java}
+{\sc Long, F.}, {\sc Mohindra, D.}, {\sc Seacord, R.~C.}, {\sc Sutherland,
+  D.~F.}, {\sc and} {\sc Svoboda, D.} 2011.
+\newblock {\em The CERT Oracle Secure Coding Standard for Java}.
+\newblock Addison-Wesley Professional.
+
+\bibitem[\protect\citeauthoryear{MISRA}{MISRA}{}]{misra}
+{\sc MISRA}.
+\newblock Guidelines for the use of the c language in critical systems.
+\newblock \url{http://caxapa.ru/thumbs/468328/misra-c-2004.pdf}.
+
+\bibitem[\protect\citeauthoryear{Mohindra}{Mohindra}{2016}]{dcl00j}
+{\sc Mohindra, D.} May 24, 2016.
+\newblock Dcl00-j. prevent class initialization cycles.
+\newblock
+  \url{https://www.securecoding.cert.org/confluence/display/java/DCL00-J.+Prevent+class+initialization+cycles}.
+
+\bibitem[\protect\citeauthoryear{Olesen, Hansen, Lawall, and Palix}{Olesen
+  et~al\mbox{.}}{2010}]{olesen2010clang}
+{\sc Olesen, M.~C.}, {\sc Hansen, R.~R.}, {\sc Lawall, J.~L.}, {\sc and} {\sc
+  Palix, N.} 2010.
+\newblock Clang and coccinelle: Synergising program analysis tools for cert c
+  secure coding standard certification.
+\newblock {\em Electronic Communications of the EASST\/}~{\em 33}.
+
+\bibitem[\protect\citeauthoryear{oodesign.com}{oodesign.com}{}]{ood}
+{\sc oodesign.com}.
+\newblock Visitor pattern.
+\newblock \url{http://www.oodesign.com/visitor-pattern.html}.
+
+\bibitem[\protect\citeauthoryear{Paul E.~Black and (co-chairs) Elizabeth
+  Fong~(editor)}{Paul E.~Black and (co-chairs) Elizabeth
+  Fong~(editor)}{}]{nist}
+{\sc Paul E.~Black, H.~G.} {\sc and} {\sc (co-chairs) Elizabeth Fong~(editor),
+  W. B.~M.}
+\newblock Proceedings of the static analysis summit.
+\newblock
+  \url{https://samate.nist.gov/docs/NIST_Special_Publication_500-262.pdf}.
+
+\bibitem[\protect\citeauthoryear{rose}{rose}{}]{rose}
+{\sc rose}.
+\newblock Rose compiler documentation.
+\newblock
+  \url{http://resources.sei.cmu.edu/asset_files/Presentation/2008_017_001_68260.pdf}.
+
+\bibitem[\protect\citeauthoryear{Seacord}{Seacord}{2008}]{cert-c}
+{\sc Seacord, R.~C.} 2008.
+\newblock {\em The CERT C secure coding standard}.
+\newblock Pearson Education.
+
+\bibitem[\protect\citeauthoryear{Svoboda}{Svoboda}{2015}]{msc01j}
+{\sc Svoboda, D.} Nov 03, 2015.
+\newblock Msc01-j.
+\newblock
+  \url{https://www.securecoding.cert.org/confluence/display/java/MSC01-J.+Do+not+use+an+empty+infinite+loop}.
+
+\bibitem[\protect\citeauthoryear{Thomas~Kuhn}{Thomas~Kuhn}{2006}]{EclipseJDT}
+{\sc Thomas~Kuhn, Eye Media GmbH Olivier~Thomann, I. O.~L.} November 20, 2006.
+\newblock Abstract syntax tree.
+\newblock
+  \url{http://www.eclipse.org/articles/Article-JavaCodeManipulation_AST}.
+
+\bibitem[\protect\citeauthoryear{Vidas, Votipka, and Christin}{Vidas
+  et~al\mbox{.}}{2011}]{vidas2011all}
+{\sc Vidas, T.}, {\sc Votipka, D.}, {\sc and} {\sc Christin, N.} 2011.
+\newblock All your droid are belong to us: A survey of current android attacks.
+\newblock In {\em WOOT}. 81--90.
+
+\bibitem[\protect\citeauthoryear{WalkMod}{WalkMod}{2013}]{walkmod}
+{\sc WalkMod}. May 10, 2013.
+\newblock Walkmod.
+\newblock \url{http://walkmod.com/}.
+
+\end{thebibliography}

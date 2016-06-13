@@ -1,0 +1,89 @@
+\documentclass{LaTeX/pmthesis}
+
+\ExecuteOptions{draft,hyperref} %% comment out this or the one below
+%\ExecuteOptions{final,openright}
+\ProcessOptions
+
+\usepackage{amsmath} % nice math symbols
+\usepackage{bm} % bold math
+\usepackage{color} % change text color
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{float}
+\usetikzlibrary{decorations.pathmorphing} % for snake lines
+\usetikzlibrary{matrix} % for block alignment
+\usetikzlibrary{arrows} % for arrow heads
+\usetikzlibrary{calc} % for manimulation of coordinates
+
+% helpful macros while writing drafts
+\newcommand\TBD[1]{{#1}\footnote*{ToBeDone}}
+\newcommand\ME[1]{\footnote{Note to myself: {#1}}}
+\newcommand\TBDMP[1]{{#1}\footnote{To be rewritten more precisely.}}
+\newcommand\TBDMTBW{\quad More to be written.}
+\newcommand\TBDFIG{{\vskip 2in}\footnote{Insert a figure here.}}
+\newcommand\bumppages[1]{\addtocounter{page}{#1}}
+\newcommand\KeepButNotInclude[1]{}
+
+
+% LaTeX macros specific to this thesis.
+\newcommand\TEX{\TeX{}}
+\newcommand\tex{\TeX{~}}
+\newcommand\web{{\tt WEB }}
+\newcommand\latex{\LaTeX{~}}
+\newcommand{\bibtex}{BiBTeX{~}}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+	language=Java,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+\begin{document}
+	
+	\pagestyle{plain}\newpage\pagenumbering{roman}\setcounter{page}{1}
+	
+%	\input{WSU/report.tex}
+	%\input{WSU/titlePage}
+	%\input{WSU/approvalPage}
+	
+	\input{WSU/acknowledgements}
+	\tableofcontents
+	\listoftables
+	\listoffigures
+	
+	%\input{WSU/abstract}
+	
+	\pagestyle{headings}\newpage\pagenumbering{arabic}\setcounter{page}{1}
+	
+	\input{Chapters/introduction.tex}
+	\input{Chapters/background.tex}%
+	\input{Chapters/proposed.tex}
+	\input{Chapters/relatedwork.tex}
+	\input{Chapters/details.tex}
+	%\input{Chapters/typeWriting.tex}
+	\input{Chapters/implementation.tex}
+	\input{Chapters/conclusion.tex}
+	
+	
+	
+	\bibliographystyle{LaTeX/acmtrans}
+	\bibliography{thesis}
+\end{document}

@@ -1,0 +1,79 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis_draft_minus_five.aux
+The style file: LaTeX/acmtrans.bst
+Database file #1: thesis.bib
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "."
+Name 1 in "Paul E. Black, Helen Gill, and W. Bradley Martin (co-chairs) Elizabeth Fong (editor)" has a comma at the end for entry nist
+while executing---line 1667 of file LaTeX/acmtrans.bst
+Name 1 in "Paul E. Black, Helen Gill, and W. Bradley Martin (co-chairs) Elizabeth Fong (editor)" has a comma at the end for entry nist
+while executing---line 1667 of file LaTeX/acmtrans.bst
+Name 1 in "Paul E. Black, Helen Gill, and W. Bradley Martin (co-chairs) Elizabeth Fong (editor)" has a comma at the end for entry nist
+while executing---line 1667 of file LaTeX/acmtrans.bst
+Name 1 in "Paul E. Black, Helen Gill, and W. Bradley Martin (co-chairs) Elizabeth Fong (editor)" has a comma at the end for entry nist
+while executing---line 1712 of file LaTeX/acmtrans.bst
+Name 1 in "Paul E. Black, Helen Gill, and W. Bradley Martin (co-chairs) Elizabeth Fong (editor)" has a comma at the end for entry nist
+while executing---line 1712 of file LaTeX/acmtrans.bst
+Name 1 in "Paul E. Black, Helen Gill, and W. Bradley Martin (co-chairs) Elizabeth Fong (editor)" has a comma at the end for entry nist
+while executing---line 1712 of file LaTeX/acmtrans.bst
+Name 1 in "Paul E. Black, Helen Gill, and W. Bradley Martin (co-chairs) Elizabeth Fong (editor)" has a comma at the end for entry nist
+while executing---line 1712 of file LaTeX/acmtrans.bst
+Warning--empty address in chess2007secure
+Warning--empty address in cert-java
+Warning--empty year in misra
+Warning--page numbers missing in olesen2010clang
+Warning--empty year in ood
+Name 1 in "Paul E. Black, Helen Gill, and W. Bradley Martin (co-chairs) Elizabeth Fong (editor)" has a comma at the end for entry nist
+while executing---line 1749 of file LaTeX/acmtrans.bst
+Name 1 in "Paul E. Black, Helen Gill, and W. Bradley Martin (co-chairs) Elizabeth Fong (editor)" has a comma at the end for entry nist
+while executing---line 1749 of file LaTeX/acmtrans.bst
+Name 1 in "Paul E. Black, Helen Gill, and W. Bradley Martin (co-chairs) Elizabeth Fong (editor)" has a comma at the end for entry nist
+while executing---line 1749 of file LaTeX/acmtrans.bst
+Warning--empty year in nist
+Warning--empty year in rose
+Warning--empty address in cert-c
+Warning--empty publisher in vidas2011all
+Warning--empty address in vidas2011all
+You've used 14 entries,
+            2969 wiz_defined-function locations,
+            762 strings with 7497 characters,
+and the built_in function-call counts, 8030 in all, are:
+= -- 652
+> -- 572
+< -- 0
++ -- 162
+- -- 202
+* -- 637
+:= -- 1558
+add.period$ -- 57
+call.type$ -- 14
+change.case$ -- 92
+chr.to.int$ -- 14
+cite$ -- 24
+duplicate$ -- 236
+empty$ -- 466
+format.name$ -- 222
+if$ -- 1420
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 9
+newline$ -- 73
+num.names$ -- 140
+pop$ -- 113
+preamble$ -- 1
+purify$ -- 179
+quote$ -- 0
+skip$ -- 230
+stack$ -- 0
+substring$ -- 308
+swap$ -- 76
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 250
+warning$ -- 10
+while$ -- 131
+width$ -- 0
+write$ -- 181
+(There were 10 error messages)

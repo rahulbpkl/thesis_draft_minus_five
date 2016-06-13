@@ -1,0 +1,88 @@
+\chapter{Documentation of tools}
+\section{Case Study}
+Some organizations already developed tools for checking CERT C coding standards.  SEI-CERT team  already verified their rules with some of the tools. The results of their analysis are in Table
+\begin{table}[h!]
+	\centering
+	
+	\label{tab:table1}
+	\begin{tabular}{|l |c|}
+		\hline
+		\textbf{Tool} & \textbf{License}\\
+		\hline
+		Parasoft  & Paid\\
+		\hline
+	 Clang &   Open Source\\
+	 \hline
+	 
+	 CodeSonar &  Paid\\
+	 \hline
+	 
+	 PRQA QA-C &   Paid\\
+	 \hline
+	 
+	 ECLAIR &   Paid\\
+	 \hline
+	 
+	 GCC &   Open Source\\
+	 \hline
+	 
+	 LDRA &   Paid\\
+	 \hline
+	 
+	 Fortify &    Paid\\
+	 \hline
+	 
+	 EDG &   Paid\\
+	 \hline
+	 
+	 Rose &   Open Source\\
+	 \hline
+	 
+	 Splinta &   Paid\\
+	 \hline
+	 
+	 Klocwork &  Paid\\
+	 \hline
+	 
+	 Coverity &   Paid\\
+	 \hline
+		
+	\end{tabular}
+	\caption{Categories in the CERT Java secure coding standard}
+\end{table}
+
+
+
+
+There are almost twelve tools in the list and most of them are paid one.  The paid tools will give only compiled exe so that future devolopment or adding new rules is not possible. Out of this list a the one named ROSE is free and open source. We choose ROSE compiler for starting the code review with CERT C standards.
+\section{ROSE}
+
+Rose was developed by Lawrence Livermore National Labs (LLNL). It will analyzes program source code, Produces Abstract Syntax Tree (AST), Can then be used for static analysis. There are a lot of dependencies and usage of old binaries makes rose a bad experience for the programmer. So they pre-installed all the packages in a virtual machine and published this  image named rosebud. In this image rosechecker also installed. The CERT Division's Rosecheckers tool performs static analysis on C/C++ source files. It is designed to enforce the rules in the CERT C Coding standard. Rosecheckers finds some C coding errors that other static analysis tools do not. However, it does not do a comprehensive test for secure and correct C coding, and it is only a prototype, so it cannot be used alone to fully analyze code security. 
+Rosecheckers can be run on a C or C++ file. The Rosecheckers program displays the file's violations of the secure coding rules that it is programmed to check for. Rosecheckers takes the same arguments as gcc, so code that contains special flags that must be passed to the compiler can be passed to Rosecheckers in the same manner as gcc.
+\subsection{Running Rosechecker}
+\begin{verbatim}
+rosechecker example.c
+\end{verbatim}
+\subsection{Building Rosecheckers}
+To build the Rosecheckers program from the CERT C Checkers, type:
+\begin{verbatim}
+make pgms
+\end{verbatim}
+
+To test Rosecheckers on the code samples from the CERT C Secure Coding Rules:
+\begin{verbatim}
+make tests
+\end{verbatim}
+
+To build API documentation pages, you must have doxygen installed:
+\begin{verbatim}
+make doc
+\end{verbatim}
+
+To clean documentation pages and build files:
+\begin{verbatim}
+make clean
+\end{verbatim}
+
+% -eof-
+

@@ -1,0 +1,24 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Chess and West}{Chess and
+  West}{2007}]{chess2007secure}
+{\sc Chess, B.} {\sc and} {\sc West, J.} 2007.
+\newblock {\em Secure programming with static analysis}.
+\newblock Pearson Education.
+
+\bibitem[\protect\citeauthoryear{MISRA}{MISRA}{}]{misra}
+{\sc MISRA}.
+\newblock Guidelines for the use of the c language in critical systems.
+\newblock \url{http://caxapa.ru/thumbs/468328/misra-c-2004.pdf}.
+
+\bibitem[\protect\citeauthoryear{oodesign.com}{oodesign.com}{}]{ood}
+{\sc oodesign.com}.
+\newblock Visitor pattern.
+\newblock \url{http://www.oodesign.com/visitor-pattern.html}.
+
+\bibitem[\protect\citeauthoryear{Seacord}{Seacord}{2008}]{cert-c}
+{\sc Seacord, R.~C.} 2008.
+\newblock {\em The CERT C secure coding standard}.
+\newblock Pearson Education.
+
+\end{thebibliography}

@@ -1,0 +1,36 @@
+@book{C Coding Standard,
+ author = {Seacord, Robert C.},
+ title = {The CERT\textregistered C Coding Standard, Second Edition: 98 Rules for Developing Safe, Reliable, and Secure Systems},
+ year = {2014},
+ isbn = {0321984048, 9780321984043},
+ edition = {2nd},
+ publisher = {Addison-Wesley Professional},
+}
+ 
+@article{coccinelle,
+  title={Coccinelle: Tool support for automated CERT C Secure Coding Standard certification},
+  author={Olesen, Mads Chr and Hansen, Ren{\'e} Rydhof and Lawall, Julia L and Palix, Nicolas},
+  journal={Science of Computer Programming},
+  volume={91},
+  pages={141--160},
+  year={2014},
+  publisher={Elsevier}
+}
+@article{Vidas,
+author = {Vidas, Timothy and Cylab, E C E and Votipka, Daniel and Cylab, I N I and Christin, Nicolas},
+file = {:home/rahul/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Vidas et al. - Unknown - All Your Droid Are Belong To Us A Survey of Current Android Attacks.pdf:pdf},
+mendeley-groups = {First Year},
+title = {{All Your Droid Are Belong To Us : A Survey of Current Android Attacks}}
+}
+@article{certsecure,
+  title={Secure Coding Standard},
+  author={CERT, CERT and CERT, C+},
+  journal={Since not all rules map to specific weaknesses, this category}
+}
+@book{CERT Java,
+  title={The CERT Oracle Secure Coding Standard for Java},
+  author={Long, Fred and Mohindra, Dhruv and Seacord, Robert C and Sutherland, Dean F and Svoboda, David},
+  year={2011},
+  publisher={Addison-Wesley Professional}
+}
+

@@ -1,0 +1,69 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Secure Software}{1}
+\contentsline {section}{\numberline {1.2}Problem Statement}{2}
+\contentsline {section}{\numberline {1.3}Motivation}{2}
+\contentsline {section}{\numberline {1.4}Aim}{2}
+\contentsline {section}{\numberline {1.5}Organization}{2}
+\contentsline {chapter}{\numberline {2}Background}{3}
+\contentsline {section}{\numberline {2.1}Abstract Syntax Tree}{3}
+\contentsline {subsection}{\numberline {2.1.1}AST Traversing}{4}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Visitor pattern}{4}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Advantages}{6}
+\contentsline {subsubsection}{\numberline {2.1.1.3}Applications of Visitor Pattern}{7}
+\contentsline {section}{\numberline {2.2}Secure Coding Guidelines}{7}
+\contentsline {subsection}{\numberline {2.2.1}MISRA}{8}
+\contentsline {subsection}{\numberline {2.2.2}CERT Secure Coding}{8}
+\contentsline {subsection}{\numberline {2.2.3}OWASP}{8}
+\contentsline {section}{\numberline {2.3}Static Analysis of Source Code}{8}
+\contentsline {subsection}{\numberline {2.3.1}Solving Problems with Static Analysis}{9}
+\contentsline {subsubsection}{\numberline {2.3.1.1}Type checking}{9}
+\contentsline {subsubsection}{\numberline {2.3.1.2}Style checking}{9}
+\contentsline {subsubsection}{\numberline {2.3.1.3}Program understanding}{9}
+\contentsline {subsubsection}{\numberline {2.3.1.4}Bug finding}{10}
+\contentsline {subsubsection}{\numberline {2.3.1.5}Security review}{10}
+\contentsline {chapter}{\numberline {3}Proposed System}{11}
+\contentsline {section}{\numberline {3.1}Source Code to AST}{11}
+\contentsline {section}{\numberline {3.2}Traverse AST}{12}
+\contentsline {section}{\numberline {3.3}An Executable Binary}{12}
+\contentsline {section}{\numberline {3.4}Audit Source Code}{13}
+\contentsline {subsection}{\numberline {3.4.1}Applicability of the rule}{13}
+\contentsline {subsection}{\numberline {3.4.2}Semi-algorithmically explanation}{13}
+\contentsline {subsection}{\numberline {3.4.3}Semi-automatic quick fixes}{13}
+\contentsline {section}{\numberline {3.5}Report Generation}{14}
+\contentsline {chapter}{\numberline {4}Related Works}{15}
+\contentsline {section}{\numberline {4.1}The CERT C Secure Coding Standard }{15}
+\contentsline {section}{\numberline {4.2}The CERT Java Secure Coding Standard}{16}
+\contentsline {section}{\numberline {4.3}All Your Droid Are Belong To Us A Survey of Current Android Attacks }{17}
+\contentsline {section}{\numberline {4.4}Tool support for automated CERT C Secure Coding Standard certification }{18}
+\contentsline {section}{\numberline {4.5}A Language for Examining Abstract Syntax Trees}{19}
+\contentsline {section}{\numberline {4.6}Secure Programming with Static Analysis}{19}
+\contentsline {section}{\numberline {4.7}Rose Compiler}{19}
+\contentsline {section}{\numberline {4.8}Eclipse Java Development Tools(JDT)}{20}
+\contentsline {section}{\numberline {4.9}JavaParser- A case study}{21}
+\contentsline {section}{\numberline {4.10}JTransformer- A case study}{21}
+\contentsline {chapter}{\numberline {5}Details of A Solution}{22}
+\contentsline {section}{\numberline {5.1}CERT Secure Coding Standard }{22}
+\contentsline {subsection}{\numberline {5.1.1}Issues Not Addressed}{22}
+\contentsline {subsection}{\numberline {5.1.2}Identifiers}{23}
+\contentsline {subsection}{\numberline {5.1.3}Priority and Levels}{23}
+\contentsline {subsection}{\numberline {5.1.4}Rules and Recommendations}{24}
+\contentsline {section}{\numberline {5.2}CERT Android Secure Coding Standard}{25}
+\contentsline {section}{\numberline {5.3}Solution for CERT rules}{26}
+\contentsline {subsection}{\numberline {5.3.1}DCL00-J. Prevent class initialization cycles (Intraclass Cycle)}{26}
+\contentsline {subsubsection}{\numberline {5.3.1.1}Non-compliant Code Example (Intraclass Cycle)}{27}
+\contentsline {subsubsection}{\numberline {5.3.1.2}Compliant Code Example (Intraclass Cycle)}{27}
+\contentsline {subsubsection}{\numberline {5.3.1.3}Applicability of the rule}{28}
+\contentsline {subsubsection}{\numberline {5.3.1.4}Semi-algorithmically explanation}{28}
+\contentsline {subsubsection}{\numberline {5.3.1.5}Semi-automatic quick fixes}{28}
+\contentsline {subsection}{\numberline {5.3.2}DCL01-J. Do not reuse public identifiers from the Java Standard Library}{29}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Non-compliant Code Example}{29}
+\contentsline {subsubsection}{\numberline {5.3.2.2}Compliant Code Example}{29}
+\contentsline {subsubsection}{\numberline {5.3.2.3}Applicability of the rule}{29}
+\contentsline {subsubsection}{\numberline {5.3.2.4}Semi-algorithmically explanation}{30}
+\contentsline {subsubsection}{\numberline {5.3.2.5}Semi-automatic quick fixes}{30}
+\contentsline {chapter}{\numberline {6}Implementation and Result}{31}
+\contentsline {section}{\numberline {6.1}AOSP Audit Report}{31}
+\contentsline {section}{\numberline {6.2}DCL00-J. Prevent class initialization cycles (Intraclass Cycle)}{31}
+\contentsline {subsection}{\numberline {6.2.1}Implementation Details}{31}
+\contentsline {subsection}{\numberline {6.2.2}Challenges}{31}
+\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{32}
